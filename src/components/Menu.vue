@@ -1,5 +1,9 @@
 <template>
-  <div class="menu-bar"><div class="menu-item" >Home</div><div class="menu-item">Contact</div><div class="menu-item">Projects</div> </div>
+  <div class="menu-bar">
+    <router-link to="/" tag="div" class="menu-item" >Home</router-link>
+    | <div class="menu-item">Contact</div>
+    | <div class="menu-item"><router-link to="/Projects">Projects</router-link></div>
+  </div>
 </template>
 
 <script>

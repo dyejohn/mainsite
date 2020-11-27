@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import routing from "@/routing";
 
-createApp(App).mount('#app')
+const vueApp = createApp(App)
+vueApp.use(routing);
+vueApp.mount('#app');
+
