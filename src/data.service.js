@@ -186,4 +186,6 @@ const getdata = function() {
     ]};
 }
 
-export default getdata;
+export const dataService ={
+    getdata
+}
