@@ -115,12 +115,12 @@ const getdata = function() {
             ],
     amendments: [
         {
-            title: "1st",
-            description: ""
+            title: "First Amendment",
+            description: "Main Establishment Clause that financial support cannot be given to churches"
         },
         {
-            title: "2nc",
-            description: ""
+            title: "2nd",
+            description: "Right to bear arms"
         },
         {
             title: "3rd",
@@ -177,7 +177,28 @@ const getdata = function() {
         {
             title: "16th",
             description: "income tax"
+        },
+        {
+            title: "17th",
+            description: "Direct Election of Senators"
+        },
+        {
+            title: "19th",
+            description: "Allow Women to vote"
+        },
+        {
+            title: "24th",
+            description: "Inability to pay a poll tax"
+        },
+        {
+            title: "26th",
+            description: "18 year olds can vote"
+        },
+        {
+
         }
+
+
     ],
     Laws: [
         {

@@ -28,7 +28,8 @@ export default {
       selectedAnswer: 0,
       correctAnswer: 0,
       isCorrect: false,
-      isWrong: false
+      isWrong: false,
+      questionQueue: []
     };
   },
   created: function() {
@@ -46,13 +47,34 @@ export default {
       }
       return false;
     },
+    makeQuestionQueue(setSize) {
+      var i=0, j=0;
+      for(i=0;i<setSize;i++) {
+        this.questionQueue.push(i);
+      }
+      // shuffle the question queue
+      for(i =0; i<50; i++) {
+        for(j=0; j<setSize;j++) {
+          let k = Math.floor(Math.random() * setSize);
+          let swap = this.questionQueue[j];
+          this.questionQueue[j] = this.questionQueue[k];
+          this.questionQueue[k] = swap;
+        }
+      }
+    },
     nextQuestion() {
       // clear the colors
       this.isCorrect = false;
       this.isWrong = false;
       // flip a coin to see which way to make the question.
       var questionType = Math.floor( Math.random() * 2);
-      var pickQuestion = Math.floor( Math.random() * this.answers.length);
+
+      if(this.questionQueue.length == 0)
+      {
+        this.makeQuestionQueue(this.answers.length);
+      }
+      let pickQuestion = this.questionQueue.shift();
+      console.log(pickQuestion);
       const questionAnswers = this.makeOtherRandomChoices(pickQuestion, this.answers.length);
       this.correctAnswer = questionAnswers.correctChoice;
       const choiceList = questionAnswers.choices;
@@ -98,14 +120,10 @@ export default {
       return {choices: response, correctChoice: swapper};
     },
     checkAnswers() {
-      //if(this.selectedAnswer === 0 && this.correctAnswer === 0)
-      //{
-        // just return
-     //   return;
-     // }
       if(this.selectedAnswer === this.correctAnswer )
       {
         this.isCorrect = true;
+        this.isWrong = false;
         return;
       }
       this.isCorrect = false;
