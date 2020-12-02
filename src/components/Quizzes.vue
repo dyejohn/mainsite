@@ -33,7 +33,7 @@ export default {
     };
   },
   created: function() {
-    this.answers = dataService.getdata().cases;
+    this.answers = dataService.getdata().amendments;
     this.nextQuestion();
   },
   methods: {

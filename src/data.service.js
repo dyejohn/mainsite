@@ -124,39 +124,39 @@ const getdata = function() {
         },
         {
             title: "3rd",
-            description: ""
+            description: "restrictions on quartering."
         },
         {
             title: "4th",
-            description: ""
+            description: "warrants, unreasonable search and seizure "
         },
         {
             title: "5th",
-            description: ""
+            description: "Grand Jury, self incrimination, double jeopardy"
         },
         {
             title: "6th",
-            description: ""
+            description: "unbiased jury, compel witnesses, details of charges"
         },
         {
             title: "7th",
-            description: ""
+            description: "Trial by jury - civil"
         },
         {
             title: "8th",
-            description: ""
+            description: "Prohibits excessive bail and cruel and unusual punishment."
         },
         {
             title: "9th",
-            description: ""
+            description: "If a right isn't enumerated, doesn't mean it doesn't exist."
         },
         {
             title: "10th",
-            description: ""
+            description: "Anything rights not given to the federal government are given to states or their citizens"
         },
         {
             title: "11th",
-            description: ""
+            description: "Citizens can not sue states in federal court"
         },
         {
             title: "12th",
@@ -183,19 +183,44 @@ const getdata = function() {
             description: "Direct Election of Senators"
         },
         {
+            title: "18th",
+            description: "Prohibition"
+        },
+        {
             title: "19th",
             description: "Allow Women to vote"
         },
         {
+            title: "20th",
+            description: "Moved Inauguration day"
+        },
+        {
+            title: "21st",
+            description: "Repeal Prohibition"
+        },
+        {
+            title: "22nd",
+            description: "Limits President to 2 terms"
+        },
+        {
+            title: "23rd",
+            description: "Gave electoral votes to the DC"
+        },
+        {
             title: "24th",
-            description: "Inability to pay a poll tax"
+            description: "Inability to make people pay a poll tax"
+        },
+        {
+            title: "25th",
+            description: "Clarification of Presidential succession."
         },
         {
             title: "26th",
             description: "18 year olds can vote"
         },
         {
-
+            title: "27th",
+            description: "No raises take effect until after an election."
         }
 
 
