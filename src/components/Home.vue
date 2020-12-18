@@ -4,8 +4,13 @@
 </template>
 
 <script>
+import HelloWorld from "@/components/HelloWorld";
+
 export default {
-name: "Home"
+name: "Home",
+  components: {
+    "HelloWorld":HelloWorld
+  }
 }
 </script>
 

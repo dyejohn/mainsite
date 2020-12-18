@@ -3,6 +3,7 @@ import Home from "@/components/Home.vue";
 import Projects from "@/components/Projects";
 import FlashCards from "@/components/FlashCards";
 import Quizzes from "@/components/Quizzes";
+import SudokuSolver from "@/components/SudokuSolver";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: "/quizzes",
         name: "Quizzes",
         component: Quizzes
+    },
+    {
+        path: "/sudoku",
+        name: "Sudoku Solver",
+        component: SudokuSolver
     }
 
 ];
