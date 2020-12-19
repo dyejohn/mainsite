@@ -5,14 +5,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Menu from "@/components/Menu";
 
 export default {
   name: 'App',
   components: {
     Menu,
-    HelloWorld
   }
 }
 </script>

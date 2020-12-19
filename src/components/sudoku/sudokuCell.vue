@@ -1,5 +1,5 @@
 <template>
-  <div class="cell">{{value}}</div>
+  <input type="text" class="cell" :value="value" >
 </template>
 
 <script>
