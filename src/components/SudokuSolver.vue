@@ -1,8 +1,8 @@
 
 <template>
+  <div class="grid"><sudoku-box/><sudoku-box/><sudoku-box/>
   <sudoku-box/><sudoku-box/><sudoku-box/>
-  <sudoku-box/><sudoku-box/><sudoku-box/>
-  <sudoku-box/><sudoku-box/><sudoku-box/>
+  <sudoku-box/><sudoku-box/><sudoku-box/></div>
 </template>
 
 <script>
@@ -18,6 +18,11 @@ name: "SudokuSolver",
 </script>
 
 <style scoped>
-
+.grid {
+  display: grid;
+  grid-template-columns: 190px 190px 190px;
+  margin: 0px;
+  padding:0px;
+}
 
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div class="box">
-    <div><sudokuCell/><sudokuCell/><sudokuCell/></div>
-    <div><sudokuCell/><sudokuCell/><sudokuCell/></div>
-    <div><sudokuCell/><sudokuCell/><sudokuCell/></div>
+    <sudokuCell/><sudokuCell/><sudokuCell/>
+    <sudokuCell/><sudokuCell/><sudokuCell/>
+    <sudokuCell/><sudokuCell/><sudokuCell/>
   </div>
 </template>
 
@@ -19,7 +19,12 @@ name: "sudokuBox",
 <style scoped>
 .box {
   border: 3px solid red;
-  display: block;
+  display: grid;
+  grid-template-columns: 62px 62px 62px;
+  margin: 0;
+  padding: 0;
 }
+
+
 
 </style>
