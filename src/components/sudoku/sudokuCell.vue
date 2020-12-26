@@ -5,7 +5,7 @@
          maxlength="1"
          class="input-cell"
          :class="{ hide : !hideHints}"
-         v-model="newValue"
+         v-model.number="newValue"
          placeholder="" @blur="endInput()"  />
     <div class="display-cell" :class="{ 'hide' : hideHints }" @click="startInput()" >1 2 3 4 5 6 7 8 9</div>
   </div>
@@ -46,7 +46,7 @@ methods: {
   flipDisplay: function() {
     console.log("flip display called");
     console.log(this.newValue);
-    if(this.newValue === "0") {
+    if(this.newValue === 0) {
       this.hideHints = false;
       return;
     }
@@ -56,6 +56,7 @@ methods: {
 watch: {
   newValue: function (val) {
     this.flipDisplay();
+    this.onValueChanged(this.row, this.column, val);
     console.log(`watcher hit ${val}`);
   },
   },

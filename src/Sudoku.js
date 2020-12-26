@@ -42,18 +42,21 @@ export default class Sudoku {
     }
 
     setValue(row, column, value) {
+        if(value === "") { value = 0}
         this.board.Rows[row].set(column, value);
         this.board.Cols[column].set(row, value);
         this.coordinatesToBox(row,column).setBoxValue(value);
     }
 
     valueByRange = function (ranges, value) {
-        for(const range of ranges) {
+        return ranges.find(range=> value >= range.start  && value <= range.end).value;
+
+        /*for(const range of ranges) {
             if(range.start >= value && range.end <= value)
             {
                 return range.value
             }
-        }
+        }*/
     }
 
     coordinatesToBox(row, column) {

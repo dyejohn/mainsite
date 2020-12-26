@@ -30,6 +30,7 @@ name: "SudokuSolver",
 
   methods: {
     onValueChanged: function(row, col, value) {
+      this.sudokuSolvingClass.setValue(row, col, value);
       console.log(`row: ${row}, col: ${col}, value: ${value}`)
     },
 
